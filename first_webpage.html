@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="FeezTech"/>
+    <meta name="dscription" content="My First webpage" />
+    <title>Document</title>
+    <link rel="stylesheet" href="first_webpage.css">
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <h1>My first Webpage</h1>
+      </div>
+    </header>
+    <main>
+      <section>
+        <nav class="navigation_section">
+          <a href="#Webpage Contents">Webpage Contents</a>
+          <a href="#Information Table">Information Table</a>
+          <a href="#Contact Form">Contact Form</a>
+        </nav>
+
+        <div class="page-image">
+        <p>
+          <img
+            src="images/4k-beautiful-colorful-abstract-wallpaper-photo.jpg"
+            alt="See How Beautiful Life!"
+            title="Good beautiful morning">
+        </p>
+
+        <div class="page-description">
+        <p>My name is Abdulafeez, also known as FeezTech. This is my first webpage as I begin my journey in frontend web development. I'm currently participating in the Techyjaunt internship, where I'm gaining valuable experience. The link below provides more information about Techyjaunt.
+        </p>
+        </div>
+        </div>
+        <p class="techyjaunt">
+          <a href="https://www.techyjaunt.com/" target="_blank">Visit TechyJaunt</a>
+        </p>
+      </section>
+
+      <section id="Webpage Contents">
+        <h2>Webpage Contents</h2>
+        <ul>
+            <li>Introduction</li>
+            <li>Table of Information</li>
+            <li>Contact Form</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section id="Information Table">
+        <h2>Information Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Items</th>
+              <th>Description</th>
+              <th>Quantity</th>
+            </tr>
+
+            <tr>
+              <td>Pens</td>
+              <td>Blue Ink Pens</td>
+              <td>5</td>
+            </tr>
+
+            <tr>
+              <td>Notebooks</td>
+              <td>Spiral-bound Notebooks</td>
+              <td>3</td>
+            </tr>
+
+            <tr>
+              <td>Markers</td>
+              <td>Permanent Markers</td>
+              <td>2</td>
+            </tr>
+          </thead>
+        </table>
+      </section>
+      <hr>
+
+      <section id="Contact Form">
+        <h2>Contact Form</h2>
+                <form action="https://httpbin.org/get/" method="get" target="_blank">
+                  <div class="fieldset-container">
+                    <fieldset>
+                      <legend>Send Message</legend>
+                        <p>
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" id="name" placeholder="your name" autocomplete="on" autofocus required>
+                        </p>
+                        <p>
+                            <label for="email">Email: </label>
+                            <input type="text" name="email" id="email" placeholder="your email" autocomplete="on" required>
+                        </p>
+
+                        <p>
+                            <label for="password">Password: </label>
+                            <input type="password" name="password" id="password" placeholder=" enter your password" required autocomplete="off">
+                        </p>
+
+                        <p>
+                            <label for="gender">Gender: </label>
+                            <input type="radio"   name="gender" id="gender" value="male"> 
+                            <label>Male</label>
+                            <input type="radio"   name="gender" id="gender" value="male">
+                            <label>Female</label>
+                        </p>
+                        <p>
+                          <label for="subscribe">Subscribe: </label>
+                          <input type="checkbox"   name="subscribe" id="subscribe"> 
+                          <label>Yes, i want to subscribe</label>
+                        </p> 
+                        
+                        <p>
+                          <label for="items">Number of items: </label>
+                          <input type="number" name="items" id="items" placeholder="item number">
+                        </p>
+
+                        <p>
+                          <label for="date">Date: </label>
+                          <input type="date" name="date" id="date">
+                      </p>
+
+                        <p>
+                            <label for="message">Message: </label>
+                            <br>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                        </p>
+                            
+                        </fieldset>
+                        </div>
+                        <br>
+                        <button type="submit">Send</button>
+                        <button type="reset">Reset</button>
+                </form>
+      </section>
+    </main>
+    <footer><p>&copy;FeezTech</p></footer>
+  </body>
+</html>
